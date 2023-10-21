@@ -15,8 +15,10 @@
 			<a
 				href={'https://www.linkedin.com/in/geianmarkdenorte'}
 				target="_blank"
-				class="cursor-pointer">@Manggigi</a
+				class="cursor-pointer"
 			>
+				@Manggigi
+			</a>
 		</p>
 	</footer>
 </div>
