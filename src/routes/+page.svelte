@@ -70,7 +70,7 @@
 	</div>
 
 	<div
-		class="h-[70vh] bg-neutral-200 dark:bg-slate-700 mb-4 rounded-lg space-y-2 py-6 px-4 overflow-auto"
+		class="h-[70vh] bg-neutral-200 mb-4 rounded-lg space-y-2 py-6 px-4 overflow-auto"
 		bind:this={div}
 	>
 		{#each aiChatArray as msg}
@@ -78,7 +78,7 @@
 				<div class="flex items-end space-x-2" transition:fly={{ y: '100%' }}>
 					<img src="/gigi.webp" alt="deepy-bot" class="w-8 h-8 rounded-full" />
 					<p
-						class="whitespace-pre-wrap px-4 py-2 bg-neutral-300 dark:bg-slate-600 rounded-md max-w-[75%] rounded-bl-none break-words"
+						class="whitespace-pre-wrap px-4 py-2 bg-neutral-300 rounded-md max-w-[75%] rounded-bl-none break-words"
 					>
 						{msg.content}
 					</p>
@@ -96,7 +96,7 @@
 	</div>
 	<div class="flex w-full">
 		<input
-			class="px-4 rounded-md w-full focus:bg-neutral-100 dark:focus:bg-slate-700"
+			class="px-4 rounded-md w-full bg-neutral-200 focus:bg-neutral-100"
 			bind:value={userMessage}
 			on:keydown={(e) => e.key === 'Enter' && handleSendAiMessage()}
 			type="text"
@@ -104,7 +104,7 @@
 			placeholder="Type a message..."
 		/>
 		<button
-			class="px-4 py-3 cursor-pointer rounded-md ml-3 bg-purple-700 hover:bg-purple-400 hover:text-white hover:border-transparent"
+			class="px-4 py-3 cursor-pointer rounded-md ml-3 bg-purple-700 hover:bg-purple-400 text-white hover:border-transparent"
 			disabled={!userMessage}
 			on:click={handleSendAiMessage}
 		>
